@@ -548,7 +548,20 @@ export default function Dashboard(props) {
           </Widget>
         </Grid>
 
-        
+        <Grid item xs={12}>
+          <Widget
+            title="Support Requests"
+            upperTitle
+            noBodyPadding
+            bodyClass={classes.tableWidget}
+          >
+            
+            <ApexLineChart></ApexLineChart>
+            <Divider></Divider>
+            <Table data={mock.table} />
+          </Widget>
+        </Grid>
+
         <Grid item xs={12}>
           <Widget
             title="Support Requests"
