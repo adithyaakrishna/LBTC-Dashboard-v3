@@ -105,7 +105,7 @@ export default function Header(props) {
   var [notificationsMenu, setNotificationsMenu] = useState(null);
   var [isNotificationsUnread, setIsNotificationsUnread] = useState(true);
   var [profileMenu, setProfileMenu] = useState(null);
-  var [isSearchOpen, setSearchOpen] = useState(false);
+  //var [isSearchOpen, setSearchOpen] = useState(false);
 
   return (
     <AppBar position="fixed" className={classes.appBar}>
