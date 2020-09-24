@@ -51,6 +51,7 @@ export default function Dashboard(props) {
   return (
     <>
       <PageTitle title="Dashboard" button="Latest Reports" />
+
       <Grid container spacing={4}>
         <Grid item lg={3} md={4} sm={6} xs={12}>
           <Widget
@@ -175,6 +176,7 @@ export default function Dashboard(props) {
             </div>
           </Widget>
         </Grid>
+        
         <Grid item lg={3} md={8} sm={6} xs={12}>
           <Widget
             title="Number of Unemployed Youths"
@@ -294,6 +296,14 @@ export default function Dashboard(props) {
           </Widget>
         </Grid>
 
+        {mock.bigStat.map(stat => (
+          <Grid item md={4} sm={6} xs={12} key={stat.product}>
+            <BigStat {...stat} />
+          </Grid>
+        ))}
+
+        </Grid>
+        <Grid container spacing={4}>
         <Grid item lg={3} md={4} sm={6} xs={12}>
           <Widget
             title="Number of Kids Below 10 Years"
@@ -536,6 +546,18 @@ export default function Dashboard(props) {
           </Widget>
         </Grid>
 
+        
+        <Grid item xs={12}>
+          <Widget
+            title="Support Requests"
+            upperTitle
+            noBodyPadding
+            bodyClass={classes.tableWidget}
+          >
+            <Table data={mock.table} />
+          </Widget>
+        </Grid>
+
         <Grid item xs={12}>
           <Widget
             bodyClass={classes.mainChartBody}
@@ -636,21 +658,7 @@ export default function Dashboard(props) {
             </ResponsiveContainer>
           </Widget>
         </Grid>
-        {mock.bigStat.map(stat => (
-          <Grid item md={4} sm={6} xs={12} key={stat.product}>
-            <BigStat {...stat} />
-          </Grid>
-        ))}
-        <Grid item xs={12}>
-          <Widget
-            title="Support Requests"
-            upperTitle
-            noBodyPadding
-            bodyClass={classes.tableWidget}
-          >
-            <Table data={mock.table} />
-          </Widget>
-        </Grid>
+
       </Grid>
     </>
   );
