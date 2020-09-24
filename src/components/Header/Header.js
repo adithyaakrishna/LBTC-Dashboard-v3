@@ -3,18 +3,18 @@ import {
   AppBar,
   Toolbar,
   IconButton,
-  InputBase,
+  //InputBase,
   Menu,
   MenuItem,
   Fab,
-  Link
+  //Link
 } from "@material-ui/core";
 import {
   Menu as MenuIcon,
   MailOutline as MailIcon,
   NotificationsNone as NotificationsIcon,
   Person as AccountIcon,
-  Search as SearchIcon,
+  //Search as SearchIcon,
   Send as SendIcon,
   ArrowBack as ArrowBackIcon,
 } from "@material-ui/icons";
@@ -24,7 +24,9 @@ import classNames from "classnames";
 import useStyles from "./styles";
 
 // components
-import { Badge, Typography, Button } from "../Wrappers/Wrappers";
+import { Badge, Typography,
+   //Button
+   } from "../Wrappers/Wrappers";
 import Notification from "../Notification/Notification";
 import UserAvatar from "../UserAvatar/UserAvatar";
 
@@ -137,11 +139,11 @@ export default function Header(props) {
           )}
         </IconButton>
         <Typography variant="h6" weight="medium" className={classes.logotype}>
-          React Material Admin
+          Let's Be The Change Dashboard
         </Typography>
         <div className={classes.grow} />
-        <Button component={Link} href="https://flatlogic.com/templates/react-material-admin-full" variant={"outlined"} color={"secondary"} style={{marginRight: 24}}>Unlock full version</Button>
-        <div
+        {/* <Button component={Link} href="https://flatlogic.com/templates/react-material-admin-full" variant={"outlined"} color={"secondary"} style={{marginRight: 24}}>Unlock full version</Button> */}
+        {/* <div
           className={classNames(classes.search, {
             [classes.searchFocused]: isSearchOpen,
           })}
@@ -161,7 +163,7 @@ export default function Header(props) {
               input: classes.inputInput,
             }}
           />
-        </div>
+        </div> */}
         <IconButton
           color="inherit"
           aria-haspopup="true"
@@ -289,18 +291,18 @@ export default function Header(props) {
         >
           <div className={classes.profileMenuUser}>
             <Typography variant="h4" weight="medium">
-              John Smith
+              Let's Be The Change
             </Typography>
             <Typography
               className={classes.profileMenuLink}
               component="a"
               color="primary"
-              href="https://flatlogic.com"
+              href="https://www.letsbethechange.in"
             >
-              Flalogic.com
+              Our Website
             </Typography>
           </div>
-          <MenuItem
+          {/* <MenuItem
             className={classNames(
               classes.profileMenuItem,
               classes.headerMenuItem,
@@ -323,7 +325,7 @@ export default function Header(props) {
             )}
           >
             <AccountIcon className={classes.profileMenuIcon} /> Messages
-          </MenuItem>
+          </MenuItem> */}
           <div className={classes.profileMenuUser}>
             <Typography
               className={classes.profileMenuLink}

@@ -30,13 +30,13 @@ import {
 } from "../../context/LayoutContext";
 
 const structure = [
-  { id: 0, label: "Dashboard", link: "/app/dashboard", icon: <HomeIcon /> },
-  {
-    id: 1,
-    label: "Typography",
-    link: "/app/typography",
-    icon: <TypographyIcon />,
-  },
+  { id: 0, label: "Home", link: "/app/dashboard", icon: <HomeIcon /> },
+  // {
+  //   id: 1,
+  //   label: "Typography",
+  //   link: "/app/typography",
+  //   icon: <TypographyIcon />,
+  // },
   { id: 2, label: "Tables", link: "/app/tables", icon: <TableIcon /> },
   {
     id: 3,
@@ -55,11 +55,11 @@ const structure = [
       { label: "Maps", link: "/app/ui/maps" },
     ],
   },
-  { id: 5, type: "divider" },
-  { id: 6, type: "title", label: "HELP" },
-  { id: 7, label: "Library", link: "", icon: <LibraryIcon /> },
-  { id: 8, label: "Support", link: "", icon: <SupportIcon /> },
-  { id: 9, label: "FAQ", link: "", icon: <FAQIcon /> },
+  // { id: 5, type: "divider" },
+  // { id: 6, type: "title", label: "HELP" },
+  // { id: 7, label: "Library", link: "", icon: <LibraryIcon /> },
+  // { id: 8, label: "Support", link: "", icon: <SupportIcon /> },
+  // { id: 9, label: "FAQ", link: "", icon: <FAQIcon /> },
   { id: 10, type: "divider" },
   { id: 11, type: "title", label: "PROJECTS" },
   {
@@ -80,6 +80,7 @@ const structure = [
     link: "",
     icon: <Dot size="small" color="secondary" />,
   },
+  { id: 15, type: "divider" },
 ];
 
 function Sidebar({ location }) {
