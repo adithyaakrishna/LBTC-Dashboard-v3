@@ -4,7 +4,7 @@ import {
   LinearProgress,
   Select,
   OutlinedInput,
-  MenuItem,
+  MenuItem, Divider
 } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
 import {
@@ -30,8 +30,9 @@ import Widget from "../../components/Widget";
 import PageTitle from "../../components/PageTitle";
 import { Typography } from "../../components/Wrappers";
 import Dot from "../../components/Sidebar/components/Dot";
-//import Table from "./components/Table/Table";
+import Table from "./components/Table/Table";
 import BigStat from "./components/BigStat/BigStat";
+import ApexLineChart from "../charts/components/ApexLineChart";
 
 const mainChartData = getMainChartData();
 const PieChartData = [
@@ -547,18 +548,21 @@ export default function Dashboard(props) {
         </Grid>
 
         
-        {/* <Grid item xs={12}>
+        <Grid item xs={12}>
           <Widget
             title="Support Requests"
             upperTitle
             noBodyPadding
             bodyClass={classes.tableWidget}
           >
+            
+            <ApexLineChart></ApexLineChart>
+            <Divider></Divider>
             <Table data={mock.table} />
           </Widget>
-        </Grid> */}
+        </Grid>
 
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <Widget
             bodyClass={classes.mainChartBody}
             header={
@@ -657,7 +661,7 @@ export default function Dashboard(props) {
               </ComposedChart>
             </ResponsiveContainer>
           </Widget>
-        </Grid>
+        </Grid> */}
 
       </Grid>
     </>

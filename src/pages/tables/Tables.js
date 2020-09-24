@@ -4,11 +4,11 @@ import MUIDataTable from "mui-datatables";
 
 // components
 import PageTitle from "../../components/PageTitle";
-import Widget from "../../components/Widget";
-import Table from "../dashboard/components/Table/Table";
+//import Widget from "../../components/Widget";
+//import Table from "../dashboard/components/Table/Table";
 
 // data
-import mock from "../dashboard/mock";
+//import mock from "../dashboard/mock";
 
 const datatableData = [
   ["Joe James", "Example Inc.", "Yonkers", "NY"],
@@ -33,23 +33,23 @@ const datatableData = [
 export default function Tables() {
   return (
     <>
-      <PageTitle title="Tables" />
+      <PageTitle title="Survey Data" />
       <Grid container spacing={4}>
         <Grid item xs={12}>
           <MUIDataTable
             title="Employee List"
             data={datatableData}
-            columns={["Name", "Company", "City", "State"]}
+            columns={["Name", "Company", "City", "State", "Area"]}
             options={{
               filterType: "checkbox",
             }}
           />
         </Grid>
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <Widget title="Material-UI Table" upperTitle noBodyPadding>
             <Table data={mock.table} />
           </Widget>
-        </Grid>
+        </Grid> */}
       </Grid>
     </>
   );

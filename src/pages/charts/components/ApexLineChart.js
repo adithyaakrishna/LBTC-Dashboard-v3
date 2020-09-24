@@ -11,6 +11,14 @@ const series = [
     name: "series2",
     data: [11, 32, 45, 32, 34, 52, 41],
   },
+  {
+    name: "series3",
+    data: [21, 10, 48, 31, 22, 99, 75],
+  },
+  {
+    name: "series4",
+    data: [21, 12, 35, 42, 54, 22, 11],
+  },
 ];
 
 export default function ApexLineChart() {

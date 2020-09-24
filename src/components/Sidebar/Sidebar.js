@@ -37,7 +37,7 @@ const structure = [
   //   link: "/app/typography",
   //   icon: <TypographyIcon />,
   // },
-  { id: 2, label: "Tables", link: "/app/tables", icon: <TableIcon /> },
+  //{ id: 2, label: "Survey Data", link: "/app/tables", icon: <TableIcon /> },
   {
     id: 3,
     label: "Notifications",
@@ -50,7 +50,7 @@ const structure = [
     link: "/app/ui",
     icon: <UIElementsIcon />,
     children: [
-      { label: "Icons", link: "/app/ui/icons" },
+      //{ label: "Icons", link: "/app/ui/icons" },
       { label: "Charts", link: "/app/ui/charts" },
       { label: "Maps", link: "/app/ui/maps" },
     ],
