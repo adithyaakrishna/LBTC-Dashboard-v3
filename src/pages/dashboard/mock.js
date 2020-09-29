@@ -27,7 +27,7 @@ export default {
   ],
   bigStat: [
     {
-      product: "Light Blue",
+      product: "Resource Distribution",
       total: {
         monthly: 4232,
         weekly: 1465,
@@ -46,46 +46,46 @@ export default {
         daily: { value: 3.25, profit: true }
       }
     },
-    {
-      product: "Sing App",
-      total: {
-        monthly: 754,
-        weekly: 180,
-        daily: 27,
-        percent: { value: 2.5, profit: true }
-      },
-      color: "warning",
-      registrations: {
-        monthly: { value: 32, profit: true },
-        weekly: { value: 8, profit: true },
-        daily: { value: 2, profit: false }
-      },
-      bounce: {
-        monthly: { value: 2.5, profit: true },
-        weekly: { value: 4, profit: false },
-        daily: { value: 4.5, profit: false }
-      }
-    },
-    {
-      product: "RNS",
-      total: {
-        monthly: 1025,
-        weekly: 301,
-        daily: 44,
-        percent: { value: 3.1, profit: true }
-      },
-      color: "secondary",
-      registrations: {
-        monthly: { value: 230, profit: true },
-        weekly: { value: 58, profit: false },
-        daily: { value: 15, profit: false }
-      },
-      bounce: {
-        monthly: { value: 21.5, profit: false },
-        weekly: { value: 19.35, profit: false },
-        daily: { value: 10.1, profit: true }
-      }
-    }
+    // {
+    //   product: "Sing App",
+    //   total: {
+    //     monthly: 754,
+    //     weekly: 180,
+    //     daily: 27,
+    //     percent: { value: 2.5, profit: true }
+    //   },
+    //   color: "warning",
+    //   registrations: {
+    //     monthly: { value: 32, profit: true },
+    //     weekly: { value: 8, profit: true },
+    //     daily: { value: 2, profit: false }
+    //   },
+    //   bounce: {
+    //     monthly: { value: 2.5, profit: true },
+    //     weekly: { value: 4, profit: false },
+    //     daily: { value: 4.5, profit: false }
+    //   }
+    // },
+    // {
+    //   product: "RNS",
+    //   total: {
+    //     monthly: 1025,
+    //     weekly: 301,
+    //     daily: 44,
+    //     percent: { value: 3.1, profit: true }
+    //   },
+    //   color: "secondary",
+    //   registrations: {
+    //     monthly: { value: 230, profit: true },
+    //     weekly: { value: 58, profit: false },
+    //     daily: { value: 15, profit: false }
+    //   },
+    //   bounce: {
+    //     monthly: { value: 21.5, profit: false },
+    //     weekly: { value: 19.35, profit: false },
+    //     daily: { value: 10.1, profit: true }
+    //   }
+    // }
   ],
   notifications: [
     {

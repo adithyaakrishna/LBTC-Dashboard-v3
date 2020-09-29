@@ -26,7 +26,7 @@ export default function BigStat(props) {
         <div className={classes.title}>
           <Typography variant="h5">{product}</Typography>
 
-          <Select
+          {/* <Select
             value={value}
             onChange={e => setValue(e.target.value)}
             input={
@@ -40,7 +40,7 @@ export default function BigStat(props) {
             <MenuItem value="daily">Daily</MenuItem>
             <MenuItem value="weekly">Weekly</MenuItem>
             <MenuItem value="monthly">Monthly</MenuItem>
-          </Select>
+          </Select> */}
         </div>
       }
       upperTitle
@@ -75,7 +75,46 @@ export default function BigStat(props) {
             />
           </Grid>
           <Typography size="sm" color="text" colorBrightness="secondary">
-            Registrations
+            No. of Masks Distributed
+          </Typography>
+        </div>
+        <div className={classnames(classes.statCell, classes.borderRight)}>
+          <Grid container alignItems="center">
+            <Typography variant="h6">{registrations[value].value}</Typography>
+            <ArrowForwardIcon
+              className={classnames(classes.profitArrow, {
+                [!registrations[value].profit]: classes.profitArrowDanger,
+              })}
+            />
+          </Grid>
+          <Typography size="sm" color="text" colorBrightness="secondary">
+            No. of Gloves Distributed
+          </Typography>
+        </div>
+        <div className={classnames(classes.statCell, classes.borderRight)}>
+          <Grid container alignItems="center">
+            <Typography variant="h6">{registrations[value].value}</Typography>
+            <ArrowForwardIcon
+              className={classnames(classes.profitArrow, {
+                [!registrations[value].profit]: classes.profitArrowDanger,
+              })}
+            />
+          </Grid>
+          <Typography size="sm" color="text" colorBrightness="secondary">
+            No. of People who received Prescription Medicines
+          </Typography>
+        </div>
+        <div className={classnames(classes.statCell, classes.borderRight)}>
+          <Grid container alignItems="center">
+            <Typography variant="h6">{registrations[value].value}</Typography>
+            <ArrowForwardIcon
+              className={classnames(classes.profitArrow, {
+                [!registrations[value].profit]: classes.profitArrowDanger,
+              })}
+            />
+          </Grid>
+          <Typography size="sm" color="text" colorBrightness="secondary">
+            No. of Hygiene Kits Distributed
           </Typography>
         </div>
         <div className={classes.statCell}>
@@ -88,7 +127,7 @@ export default function BigStat(props) {
             />
           </Grid>
           <Typography size="sm" color="text" colorBrightness="secondary">
-            Bounce Rate
+            No. of Ration Kits Distributed
           </Typography>
         </div>
         <div className={classnames(classes.statCell, classes.borderRight)}>
@@ -103,7 +142,7 @@ export default function BigStat(props) {
             />
           </Grid>
           <Typography size="sm" color="text" colorBrightness="secondary">
-            Views
+            No. of People Transported to Government Care
           </Typography>
         </div>
       </div>

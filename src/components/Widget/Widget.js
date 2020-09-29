@@ -38,7 +38,7 @@ export default function Widget({
               <Typography variant="h5" color="textSecondary">
                 {title}
               </Typography>
-              {!disableWidgetMenu && (
+              {disableWidgetMenu && (
                 <IconButton
                   color="primary"
                   classes={{ root: classes.moreButton }}
@@ -62,7 +62,7 @@ export default function Widget({
           {children}
         </div>
       </Paper>
-      <Menu
+      {/* <Menu
         id="widget-menu"
         open={isMoreMenuOpen}
         anchorEl={moreButtonRef}
@@ -81,7 +81,7 @@ export default function Widget({
         <MenuItem>
           <Typography>Print</Typography>
         </MenuItem>
-      </Menu>
+      </Menu> */}
     </div>
   );
 }
