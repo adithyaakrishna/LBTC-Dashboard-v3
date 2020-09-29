@@ -19,6 +19,8 @@ export default function App() {
     <HashRouter>
       <Switch>
         <Route exact path="/" render={() => <Redirect to="/app/dashboard" />} />
+        <Route exact path="/weekly" render={() => <Redirect to="/app/dashboard-1" />} />
+        <Route exact path="/monthly" render={() => <Redirect to="/app/dashboard-2" />} />
         <Route
           exact
           path="/app"

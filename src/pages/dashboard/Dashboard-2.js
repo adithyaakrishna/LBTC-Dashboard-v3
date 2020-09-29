@@ -27,9 +27,9 @@ import useStyles from "./styles";
 
 // components
 import mock from "./mock";
-import Widget from "../../components/Widget";
-import PageTitle from "../../components/PageTitle";
-import { Typography } from "../../components/Wrappers";
+import Widget from "../../components/Widget/Widget";
+import PageTitle from "../../components/PageTitle/PageTitle";
+import { Typography } from "../../components/Wrappers/Wrappers";
 import Dot from "../../components/Sidebar/components/Dot";
 import Table from "./components/Table/Table";
 import BigStat from "./components/BigStat/BigStat";
@@ -43,7 +43,7 @@ const PieChartData = [
   { name: "Group D", value: 200, color: "success" },
 ];
 
-export default function Dashboard(props) {
+export default function Dashboard_2(props) {
   var classes = useStyles();
   var theme = useTheme();
 
@@ -51,10 +51,9 @@ export default function Dashboard(props) {
   var [mainChartState, setMainChartState] = useState("monthly");
 
   return (
-    // Daily Update Section Starts Here
+    //Monthly Update Section Starts Here
     <>
-      <PageTitle title="Today's Update" color="#ffffff" />
-
+      <PageTitle title="Monthly Update" />
       <Grid container spacing={4}>
         <Grid item lg={3} md={4} sm={6} xs={12}>
           <Widget
@@ -66,7 +65,7 @@ export default function Dashboard(props) {
             <div className={classes.visitsNumberContainer}>
               <Typography size="xl" weight="medium">
                 12, 678
-              </Typography>
+        </Typography>
               <LineChart
                 width={55}
                 height={30}
@@ -97,19 +96,19 @@ export default function Dashboard(props) {
               <Grid item>
                 <Typography color="text" colorBrightness="secondary">
                   Registrations
-                </Typography>
+          </Typography>
                 <Typography size="md">860</Typography>
               </Grid>
               <Grid item>
                 <Typography color="text" colorBrightness="secondary">
                   Sign Out
-                </Typography>
+          </Typography>
                 <Typography size="md">32</Typography>
               </Grid>
               <Grid item>
                 <Typography color="text" colorBrightness="secondary">
                   Rate
-                </Typography>
+          </Typography>
                 <Typography size="md">3.25%</Typography>
               </Grid>
             </Grid>
@@ -132,7 +131,7 @@ export default function Dashboard(props) {
                   className={classes.legendElementText}
                 >
                   Integration
-                </Typography>
+          </Typography>
               </div>
               <div className={classes.legendElement}>
                 <Dot color="primary" />
@@ -142,7 +141,7 @@ export default function Dashboard(props) {
                   className={classes.legendElementText}
                 >
                   SDK
-                </Typography>
+          </Typography>
               </div>
             </div>
             <div className={classes.progressSection}>
@@ -153,7 +152,7 @@ export default function Dashboard(props) {
                 className={classes.progressSectionTitle}
               >
                 Integration
-              </Typography>
+        </Typography>
               <LinearProgress
                 variant="determinate"
                 value={30}
@@ -169,7 +168,7 @@ export default function Dashboard(props) {
                 className={classes.progressSectionTitle}
               >
                 SDK
-              </Typography>
+        </Typography>
               <LinearProgress
                 variant="determinate"
                 value={55}
@@ -194,7 +193,7 @@ export default function Dashboard(props) {
                 className={classes.serverOverviewElementText}
               >
                 60% / 37°С / 3.3 Ghz
-              </Typography>
+        </Typography>
               <div className={classes.serverOverviewElementChartWrapper}>
                 <ResponsiveContainer height={50} width="99%">
                   <AreaChart data={getRandomData(10)}>
@@ -217,7 +216,7 @@ export default function Dashboard(props) {
                 className={classes.serverOverviewElementText}
               >
                 54% / 31°С / 3.3 Ghz
-              </Typography>
+        </Typography>
               <div className={classes.serverOverviewElementChartWrapper}>
                 <ResponsiveContainer height={50} width="99%">
                   <AreaChart data={getRandomData(10)}>
@@ -240,7 +239,7 @@ export default function Dashboard(props) {
                 className={classes.serverOverviewElementText}
               >
                 57% / 21°С / 3.3 Ghz
-              </Typography>
+        </Typography>
               <div className={classes.serverOverviewElementChartWrapper}>
                 <ResponsiveContainer height={50} width="99%">
                   <AreaChart data={getRandomData(10)}>
@@ -287,7 +286,7 @@ export default function Dashboard(props) {
                       <Dot color={color} />
                       <Typography style={{ whiteSpace: "nowrap" }}>
                         &nbsp;{name}&nbsp;
-                      </Typography>
+                </Typography>
                       <Typography color="text" colorBrightness="secondary">
                         &nbsp;{value}
                       </Typography>
@@ -317,7 +316,7 @@ export default function Dashboard(props) {
             <div className={classes.visitsNumberContainer}>
               <Typography size="xl" weight="medium">
                 12, 678
-              </Typography>
+        </Typography>
               <LineChart
                 width={55}
                 height={30}
@@ -348,19 +347,19 @@ export default function Dashboard(props) {
               <Grid item>
                 <Typography color="text" colorBrightness="secondary">
                   Registrations
-                </Typography>
+          </Typography>
                 <Typography size="md">860</Typography>
               </Grid>
               <Grid item>
                 <Typography color="text" colorBrightness="secondary">
                   Sign Out
-                </Typography>
+          </Typography>
                 <Typography size="md">32</Typography>
               </Grid>
               <Grid item>
                 <Typography color="text" colorBrightness="secondary">
                   Rate
-                </Typography>
+          </Typography>
                 <Typography size="md">3.25%</Typography>
               </Grid>
             </Grid>
@@ -383,7 +382,7 @@ export default function Dashboard(props) {
                   className={classes.legendElementText}
                 >
                   Integration
-                </Typography>
+          </Typography>
               </div>
               <div className={classes.legendElement}>
                 <Dot color="primary" />
@@ -393,7 +392,7 @@ export default function Dashboard(props) {
                   className={classes.legendElementText}
                 >
                   SDK
-                </Typography>
+          </Typography>
               </div>
             </div>
             <div className={classes.progressSection}>
@@ -404,7 +403,7 @@ export default function Dashboard(props) {
                 className={classes.progressSectionTitle}
               >
                 Integration
-              </Typography>
+        </Typography>
               <LinearProgress
                 variant="determinate"
                 value={30}
@@ -420,7 +419,7 @@ export default function Dashboard(props) {
                 className={classes.progressSectionTitle}
               >
                 SDK
-              </Typography>
+        </Typography>
               <LinearProgress
                 variant="determinate"
                 value={55}
@@ -444,7 +443,7 @@ export default function Dashboard(props) {
                 className={classes.serverOverviewElementText}
               >
                 60% / 37°С / 3.3 Ghz
-              </Typography>
+        </Typography>
               <div className={classes.serverOverviewElementChartWrapper}>
                 <ResponsiveContainer height={50} width="99%">
                   <AreaChart data={getRandomData(10)}>
@@ -467,7 +466,7 @@ export default function Dashboard(props) {
                 className={classes.serverOverviewElementText}
               >
                 54% / 31°С / 3.3 Ghz
-              </Typography>
+        </Typography>
               <div className={classes.serverOverviewElementChartWrapper}>
                 <ResponsiveContainer height={50} width="99%">
                   <AreaChart data={getRandomData(10)}>
@@ -490,7 +489,7 @@ export default function Dashboard(props) {
                 className={classes.serverOverviewElementText}
               >
                 57% / 21°С / 3.3 Ghz
-              </Typography>
+        </Typography>
               <div className={classes.serverOverviewElementChartWrapper}>
                 <ResponsiveContainer height={50} width="99%">
                   <AreaChart data={getRandomData(10)}>
@@ -537,7 +536,7 @@ export default function Dashboard(props) {
                       <Dot color={color} />
                       <Typography style={{ whiteSpace: "nowrap" }}>
                         &nbsp;{name}&nbsp;
-                      </Typography>
+                </Typography>
                       <Typography color="text" colorBrightness="secondary">
                         &nbsp;{value}
                       </Typography>
@@ -578,109 +577,108 @@ export default function Dashboard(props) {
         </Grid>
 
         {/* <Grid item xs={12}>
-          <Widget
-            bodyClass={classes.mainChartBody}
-            header={
-              <div className={classes.mainChartHeader}>
-                <Typography
-                  variant="h5"
-                  color="text"
-                  colorBrightness="secondary"
-                >
-                  Daily Line Chart
-                </Typography>
-                <div className={classes.mainChartHeaderLabels}>
-                  <div className={classes.mainChartHeaderLabel}>
-                    <Dot color="warning" />
-                    <Typography className={classes.mainChartLegentElement}>
-                      Tablet
-                    </Typography>
-                  </div>
-                  <div className={classes.mainChartHeaderLabel}>
-                    <Dot color="primary" />
-                    <Typography className={classes.mainChartLegentElement}>
-                      Mobile
-                    </Typography>
-                  </div>
-                  <div className={classes.mainChartHeaderLabel}>
-                    <Dot color="primary" />
-                    <Typography className={classes.mainChartLegentElement}>
-                      Desktop
-                    </Typography>
-                  </div>
-                </div>
-                <Select
-                  value={mainChartState}
-                  onChange={e => setMainChartState(e.target.value)}
-                  input={
-                    <OutlinedInput
-                      labelWidth={0}
-                      classes={{
-                        notchedOutline: classes.mainChartSelectRoot,
-                        input: classes.mainChartSelect,
-                      }}
-                    />
-                  }
-                  autoWidth
-                >
-                  <MenuItem value="daily">Daily</MenuItem>
-                  <MenuItem value="weekly">Weekly</MenuItem>
-                  <MenuItem value="monthly">Monthly</MenuItem>
-                </Select>
-              </div>
-            }
+    <Widget
+      bodyClass={classes.mainChartBody}
+      header={
+        <div className={classes.mainChartHeader}>
+          <Typography
+            variant="h5"
+            color="text"
+            colorBrightness="secondary"
           >
-            <ResponsiveContainer width="100%" minWidth={500} height={350}>
-              <ComposedChart
-                margin={{ top: 0, right: -15, left: -15, bottom: 0 }}
-                data={mainChartData}
-              >
-                <YAxis
-                  ticks={[0, 2500, 5000, 7500]}
-                  tick={{ fill: theme.palette.text.hint + "80", fontSize: 14 }}
-                  stroke={theme.palette.text.hint + "80"}
-                  tickLine={false}
-                />
-                <XAxis
-                  tickFormatter={i => i + 1}
-                  tick={{ fill: theme.palette.text.hint + "80", fontSize: 14 }}
-                  stroke={theme.palette.text.hint + "80"}
-                  tickLine={false}
-                />
-                <Area
-                  type="natural"
-                  dataKey="desktop"
-                  fill={theme.palette.background.light}
-                  strokeWidth={0}
-                  activeDot={false}
-                />
-                <Line
-                  type="natural"
-                  dataKey="mobile"
-                  stroke={theme.palette.primary.main}
-                  strokeWidth={2}
-                  dot={false}
-                  activeDot={false}
-                />
-                <Line
-                  type="linear"
-                  dataKey="tablet"
-                  stroke={theme.palette.warning.main}
-                  strokeWidth={2}
-                  dot={{
-                    stroke: theme.palette.warning.dark,
-                    strokeWidth: 2,
-                    fill: theme.palette.warning.main,
-                  }}
-                />
-              </ComposedChart>
-            </ResponsiveContainer>
-          </Widget>
-        </Grid> */}
-
+            Daily Line Chart
+          </Typography>
+          <div className={classes.mainChartHeaderLabels}>
+            <div className={classes.mainChartHeaderLabel}>
+              <Dot color="warning" />
+              <Typography className={classes.mainChartLegentElement}>
+                Tablet
+              </Typography>
+            </div>
+            <div className={classes.mainChartHeaderLabel}>
+              <Dot color="primary" />
+              <Typography className={classes.mainChartLegentElement}>
+                Mobile
+              </Typography>
+            </div>
+            <div className={classes.mainChartHeaderLabel}>
+              <Dot color="primary" />
+              <Typography className={classes.mainChartLegentElement}>
+                Desktop
+              </Typography>
+            </div>
+          </div>
+          <Select
+            value={mainChartState}
+            onChange={e => setMainChartState(e.target.value)}
+            input={
+              <OutlinedInput
+                labelWidth={0}
+                classes={{
+                  notchedOutline: classes.mainChartSelectRoot,
+                  input: classes.mainChartSelect,
+                }}
+              />
+            }
+            autoWidth
+          >
+            <MenuItem value="daily">Daily</MenuItem>
+            <MenuItem value="weekly">Weekly</MenuItem>
+            <MenuItem value="monthly">Monthly</MenuItem>
+          </Select>
+        </div>
+      }
+    >
+      <ResponsiveContainer width="100%" minWidth={500} height={350}>
+        <ComposedChart
+          margin={{ top: 0, right: -15, left: -15, bottom: 0 }}
+          data={mainChartData}
+        >
+          <YAxis
+            ticks={[0, 2500, 5000, 7500]}
+            tick={{ fill: theme.palette.text.hint + "80", fontSize: 14 }}
+            stroke={theme.palette.text.hint + "80"}
+            tickLine={false}
+          />
+          <XAxis
+            tickFormatter={i => i + 1}
+            tick={{ fill: theme.palette.text.hint + "80", fontSize: 14 }}
+            stroke={theme.palette.text.hint + "80"}
+            tickLine={false}
+          />
+          <Area
+            type="natural"
+            dataKey="desktop"
+            fill={theme.palette.background.light}
+            strokeWidth={0}
+            activeDot={false}
+          />
+          <Line
+            type="natural"
+            dataKey="mobile"
+            stroke={theme.palette.primary.main}
+            strokeWidth={2}
+            dot={false}
+            activeDot={false}
+          />
+          <Line
+            type="linear"
+            dataKey="tablet"
+            stroke={theme.palette.warning.main}
+            strokeWidth={2}
+            dot={{
+              stroke: theme.palette.warning.dark,
+              strokeWidth: 2,
+              fill: theme.palette.warning.main,
+            }}
+          />
+        </ComposedChart>
+      </ResponsiveContainer>
+    </Widget>
+  </Grid> */}
       </Grid>
     </>
-    //Daily Update Section Ends Here
+    //Monthly Update Section Ends Here
   );
 }
 

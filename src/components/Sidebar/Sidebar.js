@@ -31,7 +31,7 @@ import {
 } from "../../context/LayoutContext";
 
 const structure = [
-  { id: 0, label: "Home", link: "/app/dashboard", icon: <HomeIcon /> },
+  { id: 0, label: "Daily Update", link: "/app/dashboard", icon: <HomeIcon /> },
   // {
   //   id: 1,
   //   label: "Typography",
@@ -45,6 +45,8 @@ const structure = [
   //   link: "/app/notifications",
   //   icon: <NotificationsIcon />,
   // },
+  { id: 1, label: "Weekely Update", link: "/app/weekly", icon: <HomeIcon /> },
+  { id: 2, label: "Monthly Update", link: "/app/monthly", icon: <HomeIcon /> },
   {
     id: 4,
     label: "Maps",

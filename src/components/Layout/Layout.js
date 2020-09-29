@@ -25,6 +25,8 @@ import Charts from "../../pages/charts";
 
 // context
 import { useLayoutState } from "../../context/LayoutContext";
+import Dashboard_1 from "../../pages/dashboard/Dashboard-1";
+import Dashboard_2 from "../../pages/dashboard/Dashboard-2";
 
 function Layout(props) {
   var classes = useStyles();
@@ -45,6 +47,8 @@ function Layout(props) {
             <div className={classes.fakeToolbar} />
             <Switch>
               <Route path="/app/dashboard" component={Dashboard} />
+              <Route path="/app/weekly" component={Dashboard_1} />
+              <Route path="/app/monthly" component={Dashboard_2} />
               <Route path="/app/typography" component={Typography} />
               <Route path="/app/tables" component={Tables} />
               <Route path="/app/notifications" component={Notifications} />
