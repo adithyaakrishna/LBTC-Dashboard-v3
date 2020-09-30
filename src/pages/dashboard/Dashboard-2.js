@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import {
   Grid,
   LinearProgress,
-  Select,
-  OutlinedInput,
-  MenuItem,
+  //Select,
+  //OutlinedInput,
+  //MenuItem,
   Divider
 } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
 import {
   ResponsiveContainer,
-  ComposedChart,
+  //ComposedChart,
   AreaChart,
   LineChart,
   Line,
@@ -18,8 +18,8 @@ import {
   PieChart,
   Pie,
   Cell,
-  YAxis,
-  XAxis,
+  //YAxis,
+  //XAxis,
 } from "recharts";
 
 // styles
@@ -35,7 +35,7 @@ import Table from "./components/Table/Table";
 import BigStat from "./components/BigStat/BigStat";
 import ApexLineChart from "../charts/components/ApexLineChart";
 
-const mainChartData = getMainChartData();
+//const mainChartData = getMainChartData();
 const PieChartData = [
   { name: "Group A", value: 400, color: "primary" },
   { name: "Group B", value: 300, color: "secondary" },
@@ -48,7 +48,7 @@ export default function Dashboard_2(props) {
   var theme = useTheme();
 
   // local
-  var [mainChartState, setMainChartState] = useState("monthly");
+  //var [mainChartState, setMainChartState] = useState("monthly");
 
   return (
     //Monthly Update Section Starts Here

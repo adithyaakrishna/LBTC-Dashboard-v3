@@ -21,7 +21,7 @@ import useStyles from "./styles";
 
 // components
 import SidebarLink from "./components/SidebarLink/SidebarLink";
-import Dot from "./components/Dot";
+//import Dot from "./components/Dot";
 
 // context
 import {
