@@ -69,7 +69,7 @@ export default function Dashboard_1(props) {
   return (
     //Weekly Update Section Starts Here
     <>
-      <PageTitle title="Today's Update" color="#ffffff" />
+      <PageTitle title="Weekly Update" color="#ffffff" />
       <Grid container spacing={4}>
         {/* <Grid item lg={3} md={4} sm={6} xs={12}>
           <Widget
@@ -327,7 +327,7 @@ export default function Dashboard_1(props) {
         </Grid>
         <Grid item lg={3} md={8} sm={6} xs={12}>
           <Widget
-            title="Volunteers of The Week"
+            title="Helpdesk Update"
             upperTitle
             className={classes.card}
             bodyClass={classes.fullHeightBody}
@@ -340,7 +340,7 @@ export default function Dashboard_1(props) {
                   colorBrightness="secondary" style={{ color: "#FF5C93" }}
                   className={classes.legendElementText}
                 >
-                  Volunteers of The Week
+                  Helpdesk Stats
                 </Typography>
               </div>
             </div>
@@ -351,7 +351,7 @@ export default function Dashboard_1(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                {/* No. of Helpdesks Setup - <span style={{ color: "#536DFE" }}>20</span> */}
+                No. of Helpdesks Setup - <span style={{ color: "#536DFE" }}>20</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -361,7 +361,7 @@ export default function Dashboard_1(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                {/* No. of People who reached out to the Helpdesk - <span style={{ color: "#536DFE" }}>20</span> */}
+                No. of People who reached out to the Helpdesk - <span style={{ color: "#536DFE" }}>20</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -371,7 +371,7 @@ export default function Dashboard_1(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                {/* No. of People who called our Helpline - <span style={{ color: "#536DFE" }}>20</span> */}
+                No. of People who called our Helpline - <span style={{ color: "#536DFE" }}>20</span>
               </Typography>
               {/* <LinearProgress
                 variant="determinate"
@@ -387,7 +387,7 @@ export default function Dashboard_1(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                {/* Resources Distributed through Helpdesk - <span style={{ color: "#536DFE" }}>20</span> */}
+                Resources Distributed through Helpdesk - <span style={{ color: "#536DFE" }}>20</span>
               </Typography>
               {/* <LinearProgress
                 variant="determinate"

@@ -132,6 +132,80 @@ export default function Dashboard(props) {
         </Grid> */}
         <Grid item lg={3} md={8} sm={6} xs={12}>
           <Widget
+            title="Top Volunteers"
+            upperTitle
+            className={classes.card}
+            bodyClass={classes.fullHeightBody}
+          >
+            <div className={classes.performanceLegendWrapper}>
+              <div className={classes.legendElement}>
+                <Dot color="success" />
+                <Typography
+                  color="text"
+                  colorBrightness="secondary" style={{ color: "#FF5C93" }}
+                  className={classes.legendElementText}
+                >
+                  Our Top Volunteers
+                </Typography>
+              </div>
+            </div>
+            <div className={classes.progressSection}>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                {/* No. of Helpdesks Setup - <span style={{ color: "#536DFE" }}>20</span> */}
+              </Typography>
+            </div>
+            <div className={classes.progressSection}>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                {/* No. of People who reached out to the Helpdesk - <span style={{ color: "#536DFE" }}>20</span> */}
+              </Typography>
+            </div>
+            <div className={classes.progressSection}>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                {/* No. of People who called our Helpline - <span style={{ color: "#536DFE" }}>20</span> */}
+              </Typography>
+              {/* <LinearProgress
+                variant="determinate"
+                value={30}
+                classes={{ barColorPrimary: classes.progressBar }}
+                className={classes.progress}
+              /> */}
+            </div>
+            <div>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                {/* Resources Distributed through Helpdesk - <span style={{ color: "#536DFE" }}>20</span> */}
+              </Typography>
+              {/* <LinearProgress
+                variant="determinate"
+                value={55}
+                classes={{ barColorPrimary: classes.progressBar }}
+                className={classes.progress}
+              /> */}
+
+            </div>
+          </Widget>
+        </Grid>
+        <Grid item lg={3} md={8} sm={6} xs={12}>
+          <Widget
             title="Activities Conducted Today"
             upperTitle
             className={classes.card}
@@ -325,6 +399,7 @@ export default function Dashboard(props) {
             </Grid>
           </Widget>
         </Grid>
+        
       </Grid>
       
       {/* Second Row Section */}

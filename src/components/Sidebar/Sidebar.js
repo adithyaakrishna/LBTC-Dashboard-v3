@@ -52,11 +52,11 @@ const structure = [
     label: "Maps",
     link: "/app/ui/maps",
     icon: <MapRoundedIcon />,
-    // children: [
+    children: [
     //   //{ label: "Icons", link: "/app/ui/icons" },
-    //   { label: "Charts", link: "/app/ui/charts" },
+    { label: "Charts", link: "/app/ui/charts" },
     //   { label: "Maps", link: "/app/ui/maps" },
-    // ],
+     ],
   },
   // { id: 5, type: "divider" },
   // { id: 6, type: "title", label: "HELP" },
