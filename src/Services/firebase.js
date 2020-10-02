@@ -13,4 +13,16 @@ var firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-export const auth = firebase.auth();
+firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      // User is signed in.
+      console.log(user);
+      // ...
+    } else {
+        // User is signed out.
+        console.log("User is signed out");
+      // ...
+    }
+  });
+
+export const auth = firebase.auth;
