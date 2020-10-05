@@ -352,28 +352,28 @@ export default function Dashboard_2(props) {
             </div>
           </Widget>
         </Grid>
-        
+
         {/* <Grid container spacing={4}> */}
-          <Grid item xs={12} md={6}>
-            <Widget title="Pie Chart with Tooltips" noBodyPadding upperTitle>
-              <ResponsiveContainer width="100%" height={400}>
-                <PieChart width={200} height={300}>
-                  <Pie
-                    activeIndex={activeIndex}
-                    activeShape={renderActiveShape}
-                    data={VulChartData}
-                    cx={200}
-                    cy={150}
-                    innerRadius={60}
-                    outerRadius={80}
-                    fill={theme.palette.primary.main}
-                    dataKey="value"
-                    onMouseEnter={(e, id) => setActiveIndexId(id)}
-                  />
-                </PieChart>
-              </ResponsiveContainer>
-            </Widget>
-          </Grid>
+        <Grid item xs={12} md={6}>
+          <Widget title="Pie Chart with Tooltips" noBodyPadding upperTitle>
+            <ResponsiveContainer width="100%" height={400}>
+              <PieChart width={200} height={300}>
+                <Pie
+                  activeIndex={activeIndex}
+                  activeShape={renderActiveShape}
+                  data={VulChartData}
+                  cx={200}
+                  cy={150}
+                  innerRadius={60}
+                  outerRadius={80}
+                  fill={theme.palette.primary.main}
+                  dataKey="value"
+                  onMouseEnter={(e, id) => setActiveIndexId(id)}
+                />
+              </PieChart>
+            </ResponsiveContainer>
+          </Widget>
+        </Grid>
         <Grid item xs={12} md={6}>
           <Widget title="Bargraph with Data" noBodyPadding upperTitle>
             <ResponsiveContainer width="100%" height={400}>
@@ -666,7 +666,7 @@ export default function Dashboard_2(props) {
           </Widget>
         </Grid>
 
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <Widget
             title="Support Requests"
             upperTitle
@@ -692,7 +692,7 @@ export default function Dashboard_2(props) {
             <Divider></Divider>
             <Table data={mock.table} />
           </Widget>
-        </Grid>
+        </Grid> */}
 
         {/* <Grid item xs={12}>
     <Widget
