@@ -1,5 +1,5 @@
-import React, { 
-  useState 
+import React, {
+  useState
 } from "react";
 import {
   Grid,
@@ -132,7 +132,7 @@ export default function Dashboard_1(props) {
         </Grid> */}
         <Grid item lg={3} md={8} sm={6} xs={12}>
           <Widget
-            title="Activities Conducted Today"
+            title="Activities Conducted This Week"
             upperTitle
             className={classes.card}
             bodyClass={classes.fullHeightBody}

@@ -85,7 +85,7 @@ export default function Dashboard_2(props) {
       <Grid container spacing={4}>
         <Grid item lg={3} md={8} sm={6} xs={12}>
           <Widget
-            title="Activities Conducted Today"
+            title="Activities Conducted This Month"
             upperTitle
             className={classes.card}
             bodyClass={classes.fullHeightBody}
