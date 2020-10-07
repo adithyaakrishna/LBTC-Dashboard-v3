@@ -40,9 +40,9 @@ import ApexLineChart from "../charts/components/ApexLineChart";
 
 const mainChartData = getMainChartData();
 const PieChartData1 = [
-  { name: "Tests Done", value: 7, color: "primary" },
+  { name: "Tests Done", value: 0, color: "primary" },
   { name: "+ve Cases in RAT", value: 0, color: "warning" },
-  { name: "-ve Cases in RAT", value: 7, color: "success" },
+  { name: "-ve Cases in RAT", value: 0, color: "success" },
 ];
 const PieChartData = [
   { name: "Tests Done", value: 100, color: "primary" },
@@ -230,7 +230,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                Survey - <span style={{ color: "#536DFE" }}>No</span>
+                Survey - <span style={{ color: "#536DFE" }}>Yes</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -279,7 +279,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                COVID Test - <span style={{ color: "#536DFE" }}>No</span>
+                COVID Test - <span style={{ color: "#536DFE" }}>Yes</span>
               </Typography>
             </div>
           </Widget>
@@ -520,7 +520,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Houses Surveyed - <span style={{ color: "#536DFE" }}>-</span>
+                No. of Houses Surveyed - <span style={{ color: "#536DFE" }}>15</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -530,7 +530,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Individuals Covered - <span style={{ color: "#536DFE" }}>-</span>
+                No. of Individuals Covered - <span style={{ color: "#536DFE" }}>51</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -540,7 +540,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Senior Citizens - <span style={{ color: "#536DFE" }}>-</span>
+                No. of Senior Citizens - <span style={{ color: "#536DFE" }}>4</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -550,7 +550,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Children below 10 years - <span style={{ color: "#536DFE" }}>-</span>
+                No. of Children below 10 years - <span style={{ color: "#536DFE" }}>3</span>
               </Typography>
             </div><div className={classes.progressSection}>
               <Typography
@@ -559,7 +559,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of People with Disabilities - <span style={{ color: "#536DFE" }}>-</span>
+                No. of People with Disabilities - <span style={{ color: "#536DFE" }}>2</span>
               </Typography>
             </div>
             <div>
@@ -569,7 +569,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of people with Medical Comorbidities - <span style={{ color: "#536DFE" }}>-</span>
+                No. of people with Medical Comorbidities - <span style={{ color: "#536DFE" }}>10</span>
               </Typography>
               <div className={classes.progressSection}>
                 <Typography
@@ -578,7 +578,7 @@ export default function Dashboard(props) {
                   colorBrightness="secondary"
                   className={classes.progressSectionTitle}
                 >
-                  No. of COVID Tests done - <span style={{ color: "#536DFE" }}>-</span>
+                  No. of COVID Tests done - <span style={{ color: "#536DFE" }}>0</span>
                 </Typography>
               </div>
               <div className={classes.progressSection}>
@@ -588,7 +588,7 @@ export default function Dashboard(props) {
                   colorBrightness="secondary"
                   className={classes.progressSectionTitle}
                 >
-                  No. of COVID Positive People - <span style={{ color: "#536DFE" }}>-</span>
+                  No. of COVID Positive People - <span style={{ color: "#536DFE" }}>0</span>
                 </Typography>
               </div>
               <div className={classes.progressSection}>
@@ -598,17 +598,102 @@ export default function Dashboard(props) {
                   colorBrightness="secondary"
                   className={classes.progressSectionTitle}
                 >
-                  No. of COVID Cured People - <span style={{ color: "#536DFE" }}>-</span>
+                  No. of COVID Cured People - <span style={{ color: "#536DFE" }}>0</span>
                 </Typography>
               </div>
             </div>
           </Widget>
         </Grid>
-        {mock.bigStat.map(stat => (
+
+        <Grid item lg={3} md={8} sm={6} xs={12}>
+          <Widget
+            title="Resource Distribution"
+            upperTitle
+            className={classes.card}
+            bodyClass={classes.fullHeightBody}
+          >
+            <div className={classes.performanceLegendWrapper}>
+              <div className={classes.legendElement}>
+                <Dot color="warning" />
+                <Typography
+                  color="text"
+                  colorBrightness="secondary"
+                  className={classes.legendElementText}
+                >
+                  Resource Distribution Stats
+                </Typography>
+              </div>
+            </div>
+            <div className={classes.progressSection}>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                No. of Masks Distributed - <span style={{ color: "#536DFE" }}>-</span>
+              </Typography>
+            </div>
+            <div className={classes.progressSection}>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                No. of Gloves Distributed - <span style={{ color: "#536DFE" }}>-</span>
+              </Typography>
+            </div>
+            <div className={classes.progressSection}>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                No. of People Who Recieved Medicines - <span style={{ color: "#536DFE" }}>-</span>
+              </Typography>
+            </div>
+            <div className={classes.progressSection}>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                No. of Hygiene Kits Distributed - <span style={{ color: "#536DFE" }}>-</span>
+              </Typography>
+            </div><div className={classes.progressSection}>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                No. of Ration Kits Distributed - <span style={{ color: "#536DFE" }}>-</span>
+              </Typography>
+            </div>
+            <div>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                No. of People Transported to Govt. Care - <span style={{ color: "#536DFE" }}>-</span>
+              </Typography>
+
+
+
+            </div>
+          </Widget>
+        </Grid>
+
+        {/* {mock.bigStat.map(stat => (
           <Grid item md={6} sm={12} xs={12} key={stat.product}>
             <BigStat {...stat} />
           </Grid>
-        ))}
+        ))} */}
       </Grid>
     </>
     //Daily Update Section Ends Here

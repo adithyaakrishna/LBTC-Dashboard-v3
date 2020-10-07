@@ -44,11 +44,11 @@ import Example6 from "../charts/components/BiAxialBarGraph-6";
 
 //const mainChartData = getMainChartData();
 const PieChartData1 = [
-  { name: "Tests Done", value: 7, color: "primary" },
-  { name: "RATs", value: 7, color: "success" },
+  { name: "Tests Done", value: 9, color: "primary" },
+  { name: "RATs", value: 9, color: "success" },
   { name: "RTPCR Tests", value: 0, color: "secondary" },
   { name: "+ve Cases in RAT", value: 0, color: "warning" },
-  { name: "-ve Cases in RAT", value: 7, color: "warning" },
+  { name: "-ve Cases in RAT", value: 9, color: "warning" },
 ];
 const PieChartData = [
   { name: "Tests Done", value: 100, color: "primary" },
@@ -387,7 +387,7 @@ export default function Dashboard_2(props) {
         </Grid>
 
         {/* <Grid container spacing={4}> */}
-        <Grid item xs={12} md={6}>
+        {/* <Grid item xs={12} md={6}>
           <Widget title="Total Vulnerable Population" noBodyPadding upperTitle>
             <ResponsiveContainer width="100%" height={400}>
               <PieChart width={200} height={300}>
@@ -406,16 +406,16 @@ export default function Dashboard_2(props) {
               </PieChart>
             </ResponsiveContainer>
           </Widget>
-        </Grid>
-        <Grid item xs={12} md={6}>
+        </Grid> */}
+        {/* <Grid item xs={12} md={6}>
           <Widget title="Bargraph with Data" noBodyPadding upperTitle>
             <ResponsiveContainer width="100%" height={400}>
               <Example></Example>
             </ResponsiveContainer>
           </Widget>
-        </Grid>
+        </Grid> */}
       </Grid>
-      <Grid container spacing={4}>
+      {/* <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Widget title="Bargraph with Data" noBodyPadding upperTitle>
             <ResponsiveContainer width="100%" height={400}>
@@ -430,8 +430,8 @@ export default function Dashboard_2(props) {
             </ResponsiveContainer>
           </Widget>
         </Grid>
-      </Grid>
-      <Grid container spacing={4}>
+      </Grid> */}
+      {/* <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Widget title="Bargraph with Data" noBodyPadding upperTitle>
             <ResponsiveContainer width="100%" height={400}>
@@ -446,19 +446,110 @@ export default function Dashboard_2(props) {
             </ResponsiveContainer>
           </Widget>
         </Grid>
-      </Grid>
+      </Grid> */}
       <Grid container spacing={4}>
-        <Grid item xs={12} md={6}>
+        {/* <Grid item xs={12} md={6}>
           <Widget title="Bargraph with Data" noBodyPadding upperTitle>
             <ResponsiveContainer width="100%" height={400}>
               <Example6></Example6>
             </ResponsiveContainer>
           </Widget>
+        </Grid> */}
+
+        <Grid item lg={3} md={8} sm={6} xs={12}>
+          <Widget
+            title="Awareness & Street Play Update"
+            upperTitle
+            className={classes.card}
+            bodyClass={classes.fullHeightBody}
+          >
+            <div className={classes.performanceLegendWrapper}>
+              <div className={classes.legendElement}>
+                <Dot color="warning" />
+                <Typography
+                  color="text"
+                  colorBrightness="secondary"
+                  className={classes.legendElementText}
+                >
+                  Awareness Stats
+                </Typography>
+              </div>
+            </div>
+            <div className={classes.progressSection}>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                Awareness Drives - <span style={{ color: "#536DFE" }}>-</span>
+              </Typography>
+            </div>
+            <div className={classes.progressSection}>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                Population Reached (Approximate) - <span style={{ color: "#536DFE" }}>-</span>
+              </Typography>
+            </div>
+            <div className={classes.progressSection}>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                Total Number of Roads Covered - <span style={{ color: "#536DFE" }}>-</span>
+              </Typography>
+            </div>
+            <div className={classes.progressSection}>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                Average Distance Covered - <span style={{ color: "#536DFE" }}>-</span>
+              </Typography>
+            </div><div className={classes.progressSection}>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                Number of places Street Play was performed at - <span style={{ color: "#536DFE" }}>-</span>
+              </Typography>
+            </div>
+            <div>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                Population Reached (Approximate) - <span style={{ color: "#536DFE" }}>-</span>
+              </Typography>
+            </div>
+            <div>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                Total Reach (Approximate) - <span style={{ color: "#536DFE" }}>-</span>
+              </Typography>
+            </div>
+          </Widget>
         </Grid>
 
 
 
-        <Grid item md={6} xs={12}>
+        <Grid item lg={3} md={8} sm={6} xs={12}>
           <Widget
             title="Survey Update"
             upperTitle
@@ -484,7 +575,7 @@ export default function Dashboard_2(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Houses Surveyed - <span style={{ color: "#536DFE" }}>93</span>
+                No. of Houses Surveyed - <span style={{ color: "#536DFE" }}>119</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -494,7 +585,7 @@ export default function Dashboard_2(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Individuals Covered - <span style={{ color: "#536DFE" }}>309</span>
+                No. of Individuals Covered - <span style={{ color: "#536DFE" }}>393</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -504,7 +595,7 @@ export default function Dashboard_2(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Senior Citizens - <span style={{ color: "#536DFE" }}>30</span>
+                No. of Senior Citizens - <span style={{ color: "#536DFE" }}>44</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -514,7 +605,7 @@ export default function Dashboard_2(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Children below 10 years - <span style={{ color: "#536DFE" }}>41</span>
+                No. of Children below 10 years - <span style={{ color: "#536DFE" }}>44</span>
               </Typography>
             </div><div className={classes.progressSection}>
               <Typography
@@ -523,7 +614,7 @@ export default function Dashboard_2(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of People with Disabilities - <span style={{ color: "#536DFE" }}>5</span>
+                No. of People with Disabilities - <span style={{ color: "#536DFE" }}>10</span>
               </Typography>
             </div>
             <div>
@@ -533,7 +624,7 @@ export default function Dashboard_2(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of people with Medical Comorbidities - <span style={{ color: "#536DFE" }}>59</span>
+                No. of people with Medical Comorbidities - <span style={{ color: "#536DFE" }}>76</span>
               </Typography>
               <div className={classes.progressSection}>
                 <Typography
@@ -542,7 +633,7 @@ export default function Dashboard_2(props) {
                   colorBrightness="secondary"
                   className={classes.progressSectionTitle}
                 >
-                  No. of COVID Tests done - <span style={{ color: "#536DFE" }}>7</span>
+                  No. of COVID Tests done - <span style={{ color: "#536DFE" }}>9</span>
                 </Typography>
               </div>
               <div className={classes.progressSection}>
@@ -568,6 +659,93 @@ export default function Dashboard_2(props) {
             </div>
           </Widget>
         </Grid>
+
+        <Grid item lg={3} md={8} sm={6} xs={12}>
+          <Widget
+            title="Resource Distribution"
+            upperTitle
+            className={classes.card}
+            bodyClass={classes.fullHeightBody}
+          >
+            <div className={classes.performanceLegendWrapper}>
+              <div className={classes.legendElement}>
+                <Dot color="warning" />
+                <Typography
+                  color="text"
+                  colorBrightness="secondary"
+                  className={classes.legendElementText}
+                >
+                  Resource Distribution Stats
+                </Typography>
+              </div>
+            </div>
+            <div className={classes.progressSection}>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                No. of Masks Distributed - <span style={{ color: "#536DFE" }}>-</span>
+              </Typography>
+            </div>
+            <div className={classes.progressSection}>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                No. of Gloves Distributed - <span style={{ color: "#536DFE" }}>-</span>
+              </Typography>
+            </div>
+            <div className={classes.progressSection}>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                No. of People Who Recieved Medicines - <span style={{ color: "#536DFE" }}>-</span>
+              </Typography>
+            </div>
+            <div className={classes.progressSection}>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                No. of Hygiene Kits Distributed - <span style={{ color: "#536DFE" }}>-</span>
+              </Typography>
+            </div><div className={classes.progressSection}>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                No. of Ration Kits Distributed - <span style={{ color: "#536DFE" }}>-</span>
+              </Typography>
+            </div>
+            <div>
+              <Typography
+                size="md"
+                color="text"
+                colorBrightness="secondary"
+                className={classes.progressSectionTitle}
+              >
+                No. of People Transported to Govt. Care - <span style={{ color: "#536DFE" }}>-</span>
+              </Typography>
+
+
+
+            </div>
+          </Widget>
+        </Grid>
+
+
+
       </Grid>
 
       {/* <Grid container spacing={4}>
