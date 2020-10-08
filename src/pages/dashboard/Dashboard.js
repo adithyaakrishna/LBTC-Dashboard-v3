@@ -540,7 +540,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Senior Citizens - <span style={{ color: "#536DFE" }}>1</span>
+                No. of Senior Citizens - <span style={{ color: "#536DFE" }}>2</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
