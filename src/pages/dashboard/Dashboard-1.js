@@ -39,11 +39,11 @@ import ApexLineChart from "../charts/components/ApexLineChart";
 
 //const mainChartData = getMainChartData();
 const PieChartData1 = [
-  { name: "Tests Done", value: 37, color: "primary" },
-  { name: "RATs", value: 24, color: "success" },
-  { name: "RTPCR Tests", value: 13, color: "secondary" },
-  { name: "+ve Cases in RAT", value: 1, color: "warning" },
-  { name: "-ve Cases in RAT", value: 23, color: "success" },
+  { name: "Tests Done", value: 85, color: "primary" },
+  { name: "RATs", value: 41, color: "success" },
+  { name: "RTPCR Tests", value: 41, color: "secondary" },
+  { name: "+ve Cases in RAT", value: 3, color: "warning" },
+  { name: "-ve Cases in RAT", value: 38, color: "success" },
 ];
 const PieChartData = [
   { name: "Tests Done", value: 7, color: "primary" },
@@ -552,7 +552,7 @@ export default function Dashboard_1(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Houses Surveyed - <span style={{ color: "#536DFE" }}>161</span>
+                No. of Houses Surveyed - <span style={{ color: "#536DFE" }}>170</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -562,7 +562,7 @@ export default function Dashboard_1(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Individuals Covered - <span style={{ color: "#536DFE" }}>524</span>
+                No. of Individuals Covered - <span style={{ color: "#536DFE" }}>553</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -572,7 +572,7 @@ export default function Dashboard_1(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Senior Citizens - <span style={{ color: "#536DFE" }}>55</span>
+                No. of Senior Citizens - <span style={{ color: "#536DFE" }}>59</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -582,7 +582,7 @@ export default function Dashboard_1(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Children below 10 years - <span style={{ color: "#536DFE" }}>56</span>
+                No. of Children below 10 years - <span style={{ color: "#536DFE" }}>59</span>
               </Typography>
             </div><div className={classes.progressSection}>
               <Typography
@@ -601,7 +601,7 @@ export default function Dashboard_1(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of people with Medical Comorbidities - <span style={{ color: "#536DFE" }}>98</span>
+                No. of people with Medical Comorbidities - <span style={{ color: "#536DFE" }}>103</span>
               </Typography>
               <div className={classes.progressSection}>
                 <Typography
@@ -610,7 +610,7 @@ export default function Dashboard_1(props) {
                   colorBrightness="secondary"
                   className={classes.progressSectionTitle}
                 >
-                  No. of COVID Tests done - <span style={{ color: "#536DFE" }}>37</span>
+                  No. of COVID Tests done - <span style={{ color: "#536DFE" }}>85</span>
                 </Typography>
               </div>
               <div className={classes.progressSection}>
@@ -620,7 +620,7 @@ export default function Dashboard_1(props) {
                   colorBrightness="secondary"
                   className={classes.progressSectionTitle}
                 >
-                  No. of COVID Positive People - <span style={{ color: "#536DFE" }}>1</span>
+                  No. of COVID Positive People - <span style={{ color: "#536DFE" }}>3</span>
                 </Typography>
               </div>
               <div className={classes.progressSection}>
