@@ -44,7 +44,7 @@ const PieChartData1 = [
   { name: "RAT Tests", value: 5, color: "secondary" },
   { name: "RTPCR Tests", value: 5, color: "primary" },
   { name: "+ve Cases in RAT", value: 0, color: "warning" },
-  { name: "-ve Cases in RAT", value: 10, color: "success" },
+  { name: "-ve Cases in RAT", value: 5, color: "success" },
 ];
 const PieChartData = [
   { name: "Tests Done", value: 100, color: "primary" },
