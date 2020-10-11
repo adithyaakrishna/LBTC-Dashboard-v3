@@ -130,7 +130,7 @@ export default function Dashboard_2(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                Street Play - <span style={{ color: "#536DFE" }}>No</span>
+                Street Play - <span style={{ color: "#536DFE" }}>Yes</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -521,7 +521,7 @@ export default function Dashboard_2(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                Number of places Street Play was performed at - <span style={{ color: "#536DFE" }}>-</span>
+                Number of places Street Play was performed at - <span style={{ color: "#536DFE" }}>5</span>
               </Typography>
             </div>
             <div>
@@ -531,7 +531,7 @@ export default function Dashboard_2(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                Population Reached (Approximate) - <span style={{ color: "#536DFE" }}>-</span>
+                Population Reached (Approximate) - <span style={{ color: "#536DFE" }}>239</span>
               </Typography>
             </div>
             <div>
@@ -541,7 +541,7 @@ export default function Dashboard_2(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                Total Reach (Approximate) - <span style={{ color: "#536DFE" }}>-</span>
+                Total Reach (Approximate) - <span style={{ color: "#536DFE" }}>239</span>
               </Typography>
             </div>
           </Widget>
