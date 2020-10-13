@@ -521,7 +521,7 @@ export default function Dashboard_2(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                Number of places Street Play was performed at - <span style={{ color: "#536DFE" }}>7</span>
+                Number of places Street Play was performed at - <span style={{ color: "#536DFE" }}>6</span>
               </Typography>
             </div>
             <div>
@@ -531,7 +531,7 @@ export default function Dashboard_2(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                Population Reached (Approximate) - <span style={{ color: "#536DFE" }}>319</span>
+                Population Reached (Approximate) - <span style={{ color: "#536DFE" }}>479</span>
               </Typography>
             </div>
             <div>
@@ -541,7 +541,7 @@ export default function Dashboard_2(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                Total Reach (Approximate) - <span style={{ color: "#536DFE" }}>319</span>
+                Total Reach (Approximate) - <span style={{ color: "#536DFE" }}>479</span>
               </Typography>
             </div>
           </Widget>
@@ -575,7 +575,7 @@ export default function Dashboard_2(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Houses Surveyed - <span style={{ color: "#536DFE" }}>170</span>
+                No. of Houses Surveyed - <span style={{ color: "#536DFE" }}>175</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -585,7 +585,7 @@ export default function Dashboard_2(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Individuals Covered - <span style={{ color: "#536DFE" }}>553</span>
+                No. of Individuals Covered - <span style={{ color: "#536DFE" }}>578</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -595,7 +595,7 @@ export default function Dashboard_2(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Senior Citizens - <span style={{ color: "#536DFE" }}>59</span>
+                No. of Senior Citizens - <span style={{ color: "#536DFE" }}>64</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -605,7 +605,7 @@ export default function Dashboard_2(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Children below 10 years - <span style={{ color: "#536DFE" }}>59</span>
+                No. of Children below 10 years - <span style={{ color: "#536DFE" }}>61</span>
               </Typography>
             </div><div className={classes.progressSection}>
               <Typography
@@ -614,7 +614,7 @@ export default function Dashboard_2(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of People with Disabilities - <span style={{ color: "#536DFE" }}>16</span>
+                No. of People with Disabilities - <span style={{ color: "#536DFE" }}>17</span>
               </Typography>
             </div>
             <div>
@@ -624,7 +624,7 @@ export default function Dashboard_2(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of people with Medical Comorbidities - <span style={{ color: "#536DFE" }}>103</span>
+                No. of people with Medical Comorbidities - <span style={{ color: "#536DFE" }}>107</span>
               </Typography>
               <div className={classes.progressSection}>
                 <Typography

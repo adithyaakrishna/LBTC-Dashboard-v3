@@ -232,7 +232,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                Survey - <span style={{ color: "#536DFE" }}>No</span>
+                Survey - <span style={{ color: "#536DFE" }}>Yes</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
