@@ -34,7 +34,7 @@ export default function Maps() {
         containerElement={<div style={{ height: "100%" }} />}
         mapElement={<div style={{ height: "100%" }} />}
       /> */}
-      <iframe alt="jugaad" title="slum-maps-lifesaver" src="https://www.google.com/maps/d/u/0/embed?mid=1gJ-arD9spvrIG2oVQaPILlSUZsqn_jK1" width="100%" height="100%"></iframe>
+      <iframe alt="jugaad" title="slum-maps-lifesaver" src="https://www.google.com/maps/d/u/0/embed?mid=16DMGkuQd_n0ULdZR-zcyL6T1bdZKMsPi" width="100%" height="100%"></iframe>
     </div>
   );
 }

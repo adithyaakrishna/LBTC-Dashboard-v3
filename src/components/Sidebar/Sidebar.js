@@ -10,7 +10,7 @@ import {
   //LibraryBooks as LibraryIcon,
   //HelpOutline as FAQIcon,
   ArrowBack as ArrowBackIcon,
-  
+
 } from "@material-ui/icons";
 import { useTheme } from "@material-ui/styles";
 import { withRouter } from "react-router-dom";
@@ -45,25 +45,25 @@ const structure = [
   //   link: "/app/notifications",
   //   icon: <NotificationsIcon />,
   // },
-  { id: 1, label: "Weekely Update", link: "/app/weekly", icon: <HomeIcon /> },
+  { id: 1, label: "Weekly Update", link: "/app/weekly", icon: <HomeIcon /> },
   { id: 2, label: "Monthly Update", link: "/app/monthly", icon: <HomeIcon /> },
   {
     id: 4,
     label: "Maps",
     link: "/app/ui/maps",
     icon: <MapRoundedIcon />,
-    children: [
-    //   //{ label: "Icons", link: "/app/ui/icons" },
-    { label: "Charts", link: "/app/ui/charts" },
-    //   { label: "Maps", link: "/app/ui/maps" },
-     ],
+    // children: [
+    //   //   //{ label: "Icons", link: "/app/ui/icons" },
+    //   //{ label: "Charts", link: "/app/ui/charts" },
+    //   //   { label: "Maps", link: "/app/ui/maps" },
+    // ],
   },
   // { id: 5, type: "divider" },
   // { id: 6, type: "title", label: "HELP" },
   // { id: 7, label: "Library", link: "", icon: <LibraryIcon /> },
   // { id: 8, label: "Support", link: "", icon: <SupportIcon /> },
   // { id: 9, label: "FAQ", link: "", icon: <FAQIcon /> },
-  
+
   { id: 10, type: "divider" },
 
   // { id: 11, type: "title", label: "PROJECTS" },
@@ -99,7 +99,7 @@ function Sidebar({ location }) {
   // local
   var [isPermanent, setPermanent] = useState(true);
 
-  useEffect(function() {
+  useEffect(function () {
     window.addEventListener("resize", handleWindowWidthChange);
     handleWindowWidthChange();
     return function cleanup() {
