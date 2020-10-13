@@ -81,7 +81,7 @@ export default function Dashboard_2(props) {
   return (
     //Monthly Update Section Starts Here
     <>
-      <PageTitle title="Monthly Update" />
+      <PageTitle title="Monthly Update (October 2020)" />
       <Grid container spacing={4}>
         <Grid item lg={3} md={8} sm={6} xs={12}>
           <Widget

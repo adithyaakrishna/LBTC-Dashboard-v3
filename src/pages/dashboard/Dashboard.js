@@ -70,7 +70,7 @@ export default function Dashboard(props) {
   return (
     // Daily Update Section Starts Here
     <>
-      <PageTitle title="Today's Update" color="#ffffff" />
+      <PageTitle title="Today's Update - 13th October 2020" color="#ffffff" />
       <Grid container spacing={4}>
         {/* <Grid item lg={3} md={4} sm={6} xs={12}>
           <Widget
@@ -471,7 +471,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                Number of places Street Play was performed at - <span style={{ color: "#536DFE" }}>2</span>
+                Number of places Street Play was performed at - <span style={{ color: "#536DFE" }}>4</span>
               </Typography>
             </div>
             <div>
@@ -481,7 +481,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                Population Reached (Approximate) - <span style={{ color: "#536DFE" }}>80</span>
+                Population Reached (Approximate) - <span style={{ color: "#536DFE" }}>160</span>
               </Typography>
             </div>
             <div>
@@ -491,7 +491,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                Total Reach (Approximate) - <span style={{ color: "#536DFE" }}>80</span>
+                Total Reach (Approximate) - <span style={{ color: "#536DFE" }}>160</span>
               </Typography>
             </div>
           </Widget>
@@ -522,7 +522,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Houses Surveyed - <span style={{ color: "#536DFE" }}>-</span>
+                No. of Houses Surveyed - <span style={{ color: "#536DFE" }}>5</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -532,7 +532,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Individuals Covered - <span style={{ color: "#536DFE" }}>-</span>
+                No. of Individuals Covered - <span style={{ color: "#536DFE" }}>25</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -542,7 +542,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Senior Citizens - <span style={{ color: "#536DFE" }}>-</span>
+                No. of Senior Citizens - <span style={{ color: "#536DFE" }}>5</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -552,7 +552,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Children below 10 years - <span style={{ color: "#536DFE" }}>-</span>
+                No. of Children below 10 years - <span style={{ color: "#536DFE" }}>2</span>
               </Typography>
             </div><div className={classes.progressSection}>
               <Typography
@@ -561,7 +561,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of People with Disabilities - <span style={{ color: "#536DFE" }}>-</span>
+                No. of People with Disabilities - <span style={{ color: "#536DFE" }}>1</span>
               </Typography>
             </div>
             <div>
@@ -571,7 +571,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of people with Medical Comorbidities - <span style={{ color: "#536DFE" }}>-</span>
+                No. of people with Medical Comorbidities - <span style={{ color: "#536DFE" }}>4</span>
               </Typography>
               <div className={classes.progressSection}>
                 <Typography
@@ -580,7 +580,7 @@ export default function Dashboard(props) {
                   colorBrightness="secondary"
                   className={classes.progressSectionTitle}
                 >
-                  No. of COVID Tests done - <span style={{ color: "#536DFE" }}>-</span>
+                  No. of COVID Tests done - <span style={{ color: "#536DFE" }}>1</span>
                 </Typography>
               </div>
               <div className={classes.progressSection}>
@@ -590,7 +590,7 @@ export default function Dashboard(props) {
                   colorBrightness="secondary"
                   className={classes.progressSectionTitle}
                 >
-                  No. of COVID Positive People - <span style={{ color: "#536DFE" }}>-</span>
+                  No. of COVID Positive People - <span style={{ color: "#536DFE" }}>0</span>
                 </Typography>
               </div>
               <div className={classes.progressSection}>
@@ -600,7 +600,7 @@ export default function Dashboard(props) {
                   colorBrightness="secondary"
                   className={classes.progressSectionTitle}
                 >
-                  No. of COVID Cured People - <span style={{ color: "#536DFE" }}>-</span>
+                  No. of COVID Cured People - <span style={{ color: "#536DFE" }}>0</span>
                 </Typography>
               </div>
             </div>
