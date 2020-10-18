@@ -552,7 +552,7 @@ export default function Dashboard_1(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Houses Surveyed - <span style={{ color: "#536DFE" }}>5</span>
+                No. of Houses Surveyed - <span style={{ color: "#536DFE" }}>19</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -562,7 +562,7 @@ export default function Dashboard_1(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Individuals Covered - <span style={{ color: "#536DFE" }}>25</span>
+                No. of Individuals Covered - <span style={{ color: "#536DFE" }}>66</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -572,7 +572,7 @@ export default function Dashboard_1(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Senior Citizens - <span style={{ color: "#536DFE" }}>5</span>
+                No. of Senior Citizens - <span style={{ color: "#536DFE" }}>7</span>
               </Typography>
             </div>
             <div className={classes.progressSection}>
@@ -582,7 +582,7 @@ export default function Dashboard_1(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of Children below 10 years - <span style={{ color: "#536DFE" }}>2</span>
+                No. of Children below 10 years - <span style={{ color: "#536DFE" }}>6</span>
               </Typography>
             </div><div className={classes.progressSection}>
               <Typography
@@ -601,7 +601,7 @@ export default function Dashboard_1(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                No. of people with Medical Comorbidities - <span style={{ color: "#536DFE" }}>4</span>
+                No. of people with Medical Comorbidities - <span style={{ color: "#536DFE" }}>6</span>
               </Typography>
               <div className={classes.progressSection}>
                 <Typography
